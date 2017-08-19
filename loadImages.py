@@ -55,7 +55,7 @@ try:
             offset = -1
     print(colored(" [done] ", "green"))
     for m in messages:
-        if m.has_key("media"):
+        if m.has_key("media") and m['media']['type']=="photo":
             photos.append(m)
     print("Found", colored("%d" % len(photos), "red"), "Photos")
     print(colored("Downloading photos to [%s]" % outdir, "yellow"))
