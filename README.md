@@ -1,8 +1,8 @@
 # tg-channel-loader
-A media downloader script in python which can download all medias from a channel (or chat of course) 
+A media downloader script in python which can download all medias from a channel (or chat of course)
 
 
-## Dependencies:
+## Dependencies
 
 * Python 2.7
 * [telegram-cli](https://github.com/vysheng/tg)
@@ -10,8 +10,20 @@ A media downloader script in python which can download all medias from a channel
 * [termcolor](https://pypi.python.org/pypi/termcolor) module
   * `sudo -H pip2 install termcolor` on Debian/Ubuntu will install it
 
-*Note: You need to join the channel before running the script*
+**Note: You need to join the channel before running the script**
 
-## ToDo: 
+## Usage
 
-* add support for medias other than photos 
+1. Run `telegram-cli` as deamon with `json`  response on desired port:
+   here I used 2391
+
+        telegram-cli -W -k tg-server.pub -D -vvv -d -E -R -C -P 2391 --json
+2. Run Script on desired channel
+   e.g. this will same all images of `somechannel` in a templorary directory:
+
+        ./loadImages.py 2391 @somechannel $(mktemp -d)
+
+## ToDo:
+
+* add support for medias other than photos
+* add error management

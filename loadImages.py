@@ -6,7 +6,7 @@ from termcolor import colored
 
 if len(sys.argv) != 4:
     print("Usage %s port channel outdir" % (sys.argv[0]))
-    print("e.g. %s 9000 @mychannel $(mktemp -d)" % (sys.argv[0]))
+    print("e.g. %s 2391 @somechannel $(mktemp -d)" % (sys.argv[0]))
     sys.exit(-1)
 
 
