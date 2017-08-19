@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 
 from __future__ import print_function
-import socket, sys, re, json, shutil
+import socket, sys, re, json, shutil, os
 from termcolor import colored
 
 if len(sys.argv) != 4:
@@ -64,7 +64,8 @@ try:
     for p in photos:
         command = b"load_photo %s" % (p['id'])
         res = json.loads(sendRecv(s, command), strict=False)
-        shutil.move(res['result'], outdir)
+        shutil.copy(res['result'], outdir)
+        os.remove(res['result'])
         donecount += 1
         print(colored("\r%d done" % donecount, "green"),end='')
         sys.stdout.flush()
