@@ -14,11 +14,13 @@ A media downloader script in python which can download all medias from a channel
 
 ## Usage
 
-1. Run `telegram-cli` as deamon with `json`  response on desired port:  
+1. Run `telegram-cli` as deamon with `json`  response on desired port:
+
    here I used 2391
 
         telegram-cli -W -k tg-server.pub -D -vvv -d -E -R -C -P 2391 --json
 2. Run Script on desired channel
+
    e.g. this will same all images of `somechannel` in a templorary directory:
 
         ./loadImages.py 2391 @somechannel $(mktemp -d)
