@@ -1,7 +1,7 @@
 # tg-channel-loader
 
-A media downloader script in python which can download all medias from a Telegram
-channel (or chat of course)
+A media downloader script in python which can download all medias from a
+Telegram channel (or chat of course)
 
 
 ## Dependencies
@@ -32,6 +32,13 @@ channel (or chat of course)
    directory:
 
         ./loadImages.py 2391 @somechannel $(mktemp -d)
+
+   Naming rules:
+   * users with username and public channels can be named using `@`
+     before their username (e.g. `@user` or `@somePublicChannel`)
+   * people without username and private channels are refered by their
+     name replacing all spaces with underscore (e.g. `John_Snow` or
+     `Jane_Doe` or `Some_private_channel_name` )
 
 ### Ascii Cast
 
