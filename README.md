@@ -1,6 +1,6 @@
 # tg-channel-loader
 
-A media downloader script in python which can download all medias from a
+A media downloader script in python which can download all medias from a Telegram
 channel (or chat of course)
 
 
