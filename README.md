@@ -35,7 +35,7 @@ channel (or chat of course)
 
 ### Ascii Cast
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/14)
+[![asciicast](https://asciinema.org/a/3geApnuQvCveFn809jlXhBI0i.png)](https://asciinema.org/a/3geApnuQvCveFn809jlXhBI0i)
 
 ## ToDo:
 
